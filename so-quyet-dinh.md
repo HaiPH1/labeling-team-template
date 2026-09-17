@@ -7,57 +7,59 @@ kiểu này — người mới vào đội lại càng không.
 trạng thái quyết định cũ thành *Bị thay bởi QĐ-xxx*. Nhờ vậy vẫn truy được vì sao các job
 cũ được gán theo cách cũ.
 
-> Các mục bên dưới là **ví dụ**. Mẫu trống để copy nằm cuối file.
-
 ## Danh sách
 
 | Mã | Quyết định | Ngày | Xuất phát từ | Trạng thái |
 |---|---|---|---|---|
-| [QĐ-001](#qđ-001) | Người ngồi sau xe máy có box `nguoi` riêng | 17/09/2026 | [P-001](problem-backlog.md#p-001) | Hiệu lực |
-| [QĐ-002](#qđ-002) | Reviewer trả nguyên job khi mẫu kiểm có trên 10% ảnh sai | 19/09/2026 | Họp tuần 01 | Hiệu lực |
+| [QĐ-001](#qđ-001) | Segmentation: cách tô xe đứng dày đặc, sát nhau | — | [P-001](problem-backlog.md#p-001) | ⏳ Chờ chốt |
+| [QĐ-002](#qđ-002) | Segmentation: cách xử lý vùng không xác định được class | — | [P-002](problem-backlog.md#p-002) | ⏳ Chờ chốt |
 
-**Trạng thái:** Hiệu lực · Bị thay bởi QĐ-xxx · Huỷ (ghi lý do)
+**Trạng thái:** ⏳ Chờ chốt (bản nháp, còn sửa được) · Hiệu lực · Bị thay bởi QĐ-xxx · Huỷ (ghi lý do)
 
 ---
 
 ## QĐ-001
 
-**Người ngồi sau xe máy có box `nguoi` riêng**
+**Segmentation: cách tô xe đứng dày đặc, sát nhau**
 
-- **Ngày:** 17/09/2026
-- **Người tham gia:** @thanh-vien-a (chốt), @thanh-vien-b, @thanh-vien-c, @thanh-vien-d
-- **Xuất phát từ:** [P-001](problem-backlog.md#p-001)
-- **Bối cảnh:** §3.2 của guideline nói mỗi người một box, nhưng hình minh hoạ lại vẽ chung một box.
-  Hai annotator đang làm theo hai cách khác nhau.
+- **Ngày:** *(điền khi chốt)*
+- **Người tham gia:** Phạm Hữu Hải (@HaiPH1)
+- **Xuất phát từ:** [P-001](problem-backlog.md#p-001) · ảnh `w1/segmentation/G06/G06_S002.jpg`
+- **Bối cảnh:** Nhiều xe đứng sát nhau, chồng lên nhau theo phối cảnh. Guideline §1 nói semantic
+  không tách instance, §3 nói pixel thuộc object phía trước, nhưng không nói có phải bám biên từng
+  xe, khe hở nhỏ giữa các xe xử lý thế nào, và xe ở xa quá nhỏ thì làm gì. Đã tạo Issue để hỏi.
 - **Các phương án đã cân nhắc:**
-  1. *Gộp chung một box với xe* — nhanh hơn, nhưng mất số người trên xe, trong khi dữ liệu dùng để
-     đếm người tham gia giao thông. Loại.
-  2. *Box `nguoi` riêng cho từng người* — đúng câu chữ §3.2 và giữ được số người. **Chọn.**
-- **Quyết định:** Mỗi người trên xe máy, kể cả người ngồi sau chỉ lộ đầu, có một box `nguoi` riêng.
-  Box xe máy vẫn vẽ như bình thường.
+  1. *Tô gộp cả cụm xe cùng class thành một vùng, bỏ qua khe hở nhỏ* — nhanh, đúng tinh thần semantic;
+     nhưng lấy thừa background ở khe hở. *(chờ chốt)*
+  2. *Bám biên từng xe, khe hở thấy mặt đường thì tô `road`* — boundary chính xác; nhưng tốn thời gian. *(chờ chốt)*
+  3. *Xe ở xa quá nhỏ để phân biệt `car` / `truck` / `bus` thì không đoán, đưa review* — theo §3, §4. *(chờ chốt)*
+- **Quyết định:** *(chưa chốt — chờ trả lời Issue)*
 - **Việc phải làm theo:**
-  - [x] Rà lại job 101, sửa 37 ảnh đã gộp (@thanh-vien-b)
-  - [x] Báo cả đội, ghim trong kênh chat của đội
-- **Trạng thái:** Hiệu lực
+  - [ ] Nhận câu trả lời Issue, chốt phương án (@HaiPH1)
+  - [ ] Báo cả đội, rà lại các ảnh đã tô theo cách khác
+- **Trạng thái:** ⏳ Chờ chốt
 
 ## QĐ-002
 
-**Reviewer trả nguyên job khi mẫu kiểm có trên 10% ảnh sai**
+**Segmentation: cách xử lý vùng không xác định được class**
 
-- **Ngày:** 19/09/2026
-- **Người tham gia:** @thanh-vien-a (chốt), @thanh-vien-d
-- **Xuất phát từ:** Họp tổng kết tuần 01 — không phải từ backlog
-- **Bối cảnh:** Job 101 bị sửa rải rác từng ảnh qua ba vòng review, tốn thời gian của cả hai bên.
+- **Ngày:** *(điền khi chốt)*
+- **Người tham gia:** Phạm Hữu Hải (@HaiPH1)
+- **Xuất phát từ:** [P-002](problem-backlog.md#p-002) · ảnh `w1/segmentation/G06/G06_S002.jpg`
+- **Bối cảnh:** Có vùng trong ảnh (ví dụ một vùng đen) không thuộc được class nào trong 19 class.
+  Guideline §1 RULE 03 cấm ép vào class gần giống, §6 chỉ cho dùng label ignore/unlabeled nếu batch
+  có cấu hình — chưa rõ batch này có không. Đã tạo Issue để hỏi.
 - **Các phương án đã cân nhắc:**
-  1. *Sửa từng ảnh như cũ* — ổn khi lỗi lẻ tẻ, nhưng khi lỗi có hệ thống thì reviewer đang làm hộ
-     annotator. Loại.
-  2. *Kiểm mẫu 20%, trên 10% sai thì trả nguyên job* — annotator tự rà cả job theo lỗi đã chỉ ra.
-     **Chọn.**
-- **Quyết định:** Reviewer kiểm ngẫu nhiên 20% ảnh của mỗi job. Trên 10% số ảnh kiểm bị sai thì trả
-  nguyên job kèm danh sách lỗi mẫu; từ 10% trở xuống thì sửa từng ảnh.
+  1. *Để trống, tạo Issue `UNCERTAIN_CLASS` cho reviewer* — đúng RULE 03; nhưng ảnh không phủ kín. *(chờ chốt)*
+  2. *Gán label ignore/unlabeled* — rõ ràng nhất; chỉ làm được nếu batch có cấu hình label này. *(chờ chốt)*
+  3. *Gán theo vùng xung quanh (vd. vùng đen giữa mặt đường → `road`)* — phủ kín ảnh; nhưng dễ thành
+     đoán, trái RULE 03. *(chờ chốt)*
+- **Quyết định:** *(chưa chốt — chờ trả lời Issue)*
 - **Việc phải làm theo:**
-  - [ ] Áp dụng từ job 106 trở đi (@thanh-vien-d)
-- **Trạng thái:** Hiệu lực
+  - [ ] Hỏi xem batch có label ignore/unlabeled không (@HaiPH1)
+  - [ ] Nhận câu trả lời Issue, chốt phương án
+  - [ ] Báo cả đội, rà lại các ảnh đã xử lý theo cách khác
+- **Trạng thái:** ⏳ Chờ chốt
 
 ---
 
