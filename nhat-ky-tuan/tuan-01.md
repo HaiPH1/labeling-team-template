@@ -21,7 +21,7 @@ trong bảng, người đầu review job của người cuối. Không ai review
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
 | 1 | Job 1710 — 25 frame, 2D | Phạm Hữu Hải | Nguyễn Hữu Dũng | 🟡 % | Annotation in progress |
-| 2 | Job 1496 — 25 frame, 2D | Nguyễn Hữu Dũng | Nguyễn Hùng Mạnh | ⬜ 0% | Annotation new — chưa bắt đầu |
+| 2 | Job 1496 — 25 frame, 2D | Nguyễn Hữu Dũng | Nguyễn Hùng Mạnh | ⬜ 0% | Annotation new — chưa bắt đầu. Không có trong nhóm Discord, đã liên hệ riêng nhưng chưa phản hồi, đã báo cáo BTC |
 | 3 | Job 1497 — 25 frame, 2D | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | 🟡 % | Annotation in progress |
 | 4 | Job 1495 — 25 frame, 2D | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | 🟡 % | Annotation in progress |
 | 5 | Job 1494 — 25 frame, 2D | Vũ Tiến Thắng | Phạm Hữu Hải | 🟡 % | Annotation in progress |
