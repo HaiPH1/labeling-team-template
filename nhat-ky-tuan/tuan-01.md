@@ -38,10 +38,7 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 ## Vướng mắc
 
 - **Chưa liên hệ được 1 thành viên** (Nguyễn Hữu Dũng): không có trong nhóm Discord, liên hệ riêng
-  chưa phản hồi, đã báo BTC. Kéo theo:
-  - Job 1497 đứng ở 0%.
-  - Job 1710 chưa có người review (Dũng là reviewer).
-  - Mạnh chưa có job để review.
+  chưa phản hồi, đã báo BTC.
 - **Team có 2 lead, mỗi lead chỉ thấy một phần:** lead 1 chỉ thấy `bbox_polygon`, lead 2 chỉ thấy
   segmentation. Khó tổng hợp tiến độ, edge case và quyết định chung của cả đội.
 - **P-001, P-002 chưa có câu trả lời** nên chưa chốt được cách tô xe dày đặc và vùng không xác định
