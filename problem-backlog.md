@@ -42,7 +42,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
   2. Bám biên từng xe, khe hở thấy được mặt đường thì tô `road`.
   3. Xe ở xa, quá nhỏ để phân biệt `car` / `truck` / `bus` thì không đoán mà đưa review (theo §3, §4).
 - **Xử lý tạm trong lúc chờ:** Đã tạo Issue để hỏi, chờ trả lời.
-- **Kết quả:** ↗️ Chờ trả lời Issue · nháp quyết định: [QĐ-002](so-quyet-dinh.md#qđ-002) · nháp quyết định: [QĐ-001](so-quyet-dinh.md#qđ-001)
+- **Kết quả:** ↗️ Chờ trả lời Issue · nháp quyết định: [QĐ-001](so-quyet-dinh.md#qđ-001)
 
 ## P-002
 
@@ -60,7 +60,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
   2. Gán vào label ignore/unlabeled — chỉ làm được nếu batch có cấu hình label này.
   3. Gán theo vùng xung quanh (vd. vùng đen giữa mặt đường → `road`) — dễ thành đoán, trái RULE 03.
 - **Xử lý tạm trong lúc chờ:** Đã tạo Issue để hỏi, chờ trả lời.
-- **Kết quả:** ↗️ Chờ trả lời Issue
+- **Kết quả:** ↗️ Chờ trả lời Issue · nháp quyết định: [QĐ-002](so-quyet-dinh.md#qđ-002)
 
 ---
 
