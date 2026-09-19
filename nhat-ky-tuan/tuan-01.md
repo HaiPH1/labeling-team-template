@@ -52,7 +52,7 @@ Tính riêng từng phần, không cộng chung.
 | BBox_Polygon_Polyline | ~60 / 100 frame (60%) | Chưa review chéo |
 | Segmentation | Chưa đủ số (thiếu % job 1711, 1712) / 100 ảnh | Chưa review chéo |
 
-- Edge case mới: [P-001](../problem-backlog.md#p-001) (xe đứng dày đặc), [P-002](../problem-backlog.md#p-002) (vùng không xác định được class) — cả hai thuộc Segmentation
+- Edge case mới: [P-001](../problem-backlog.md#p-001) (xe đứng dày đặc), [P-002](../problem-backlog.md#p-002) (vùng không xác định được class), [P-003](../problem-backlog.md#p-003) (kết cấu cầu, đang mở) — cả ba thuộc Segmentation
 - Edge case đã chốt (19/09): P-001 → [QĐ-001](../so-quyet-dinh.md#qđ-001) tô chung thành một mảng · P-002 → [QĐ-002](../so-quyet-dinh.md#qđ-002) không tô, để trống
 
 ## Vướng mắc

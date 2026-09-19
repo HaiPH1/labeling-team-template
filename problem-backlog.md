@@ -11,6 +11,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
 |---|---|---|---|---|---|
 | [P-001](#p-001) | Segmentation: xe đứng dày đặc, sát nhau thì tô thế nào | Guideline chưa nói tới | §1, §3, §4 | ✅ Đã chốt | [QĐ-001](so-quyet-dinh.md#qđ-001) |
 | [P-002](#p-002) | Segmentation: vùng không xác định được class (vd. vùng đen) | Guideline chưa nói tới | §1 RULE 03, §6 | ✅ Đã chốt | [QĐ-002](so-quyet-dinh.md#qđ-002) |
+| [P-003](#p-003) | Segmentation: kết cấu cầu (dầm thép, cầu cạn, trụ cầu) tô class nào | Guideline chưa nói tới | §2, §1 RULE 03, §4 | 🔴 Mở | — |
 
 **Loại**
 
@@ -61,6 +62,35 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
   3. Gán theo vùng xung quanh (vd. vùng đen giữa mặt đường → `road`) — dễ thành đoán, trái RULE 03.
 - **Xử lý tạm trong lúc chờ:** Đã tạo Issue để hỏi, chờ trả lời.
 - **Kết quả:** ✅ [QĐ-002](so-quyet-dinh.md#qđ-002) — không tô, để trống (19/09/2026)
+
+---
+
+## P-003
+
+**Segmentation: kết cấu cầu (dầm thép, cầu cạn, trụ cầu) tô class nào**
+
+- **Loại:** Guideline chưa nói tới
+- **Mục guideline:** §2 (19 class, không có class `bridge`), §1 RULE 03 (không ép vào class gần giống),
+  §4 (building vs wall, wall vs fence)
+- **Người phát hiện:** Phạm Hữu Hải (@HaiPH1) · 19/09/2026
+- **Ảnh:**
+  - `w1/segmentation/G06/G06_S023.jpg` (frame 22) — xe chạy trên cầu: dầm thép phía trên và hai bên,
+    lan can lưới bên phải, dải phân cách bê tông
+  - `w1/segmentation/G06/G06_S024.jpg` (frame 23) — đi dưới cầu cạn: mặt cầu phía trên, hàng trụ cầu
+    bên trái
+- **Mô tả:** Guideline không có class cho cầu. Dầm thép, mặt cầu cạn, trụ cầu không rõ là `building`,
+  `wall`, `pole` hay để trống. Một số bộ phận đã có class rõ hơn (lan can lưới → `fence`,
+  dải phân cách bê tông → `wall`?) nhưng phần kết cấu chính thì chưa.
+- **Các cách hiểu:**
+  1. Để trống toàn bộ kết cấu cầu, giống [QĐ-002](so-quyet-dinh.md#qđ-002) (vùng không xác định
+     được class). Danh sách 19 class trùng với bộ Cityscapes, mà ở Cityscapes cầu cũng không nằm
+     trong 19 class và được bỏ qua khi huấn luyện.
+  2. Tô toàn bộ kết cấu cầu là `building` (coi cầu là công trình xây dựng).
+  3. Tách theo bộ phận: lan can lưới → `fence`, dải phân cách / thành cầu bê tông → `wall`,
+     trụ cầu → `wall` hoặc `pole`, dầm thép và mặt cầu → để trống hoặc `building`.
+- **Xử lý tạm trong lúc chờ:** *(chưa có — đề xuất: để trống phần dầm và mặt cầu theo tinh thần
+  QĐ-002, vẫn tô `fence` / `wall` cho lan can và dải phân cách)*
+- **Kết quả:** 🔴 Mở · nháp quyết định: [QĐ-003](so-quyet-dinh.md#qđ-003)
 
 ---
 
