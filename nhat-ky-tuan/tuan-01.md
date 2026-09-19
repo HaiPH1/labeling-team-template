@@ -31,7 +31,7 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 |---|---|---|---|---|---|
 | 1 | Job 1497 — 25 frame, 2D | ~~Nguyễn Hữu Dũng~~ → Phạm Hữu Hải | Nguyễn Hùng Mạnh | 🟡 100% | Gán xong, chờ review. Ban đầu giao Dũng. Dũng không có trong nhóm Discord, liên hệ riêng không phản hồi, đã báo cáo BTC → 19/09 chuyển cho Hải |
 | 2 | Job 1496 — 25 frame, 2D | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | 🟡 30% | Đang gán |
-| 3 | Job 1495 — 25 frame, 2D | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | 🟡 50% | Đang gán |
+| 3 | Job 1495 — 25 frame, 2D | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | 🟡 100% | Gán xong, chờ review |
 | 4 | Job 1494 — 25 frame, 2D | Vũ Tiến Thắng | Phạm Hữu Hải | 🟡 60% | Đang gán |
 
 ### Segmentation
@@ -39,7 +39,7 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
 | 1 | Job 1710 — 25 ảnh | Phạm Hữu Hải | ~~Nguyễn Hữu Dũng~~ → Nguyễn Hùng Mạnh | 🟡 100% | Gán xong, chờ review |
-| 2 | Job 1711 — 25 ảnh | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | 🟡 % | |
+| 2 | Job 1711 — 25 ảnh | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | 🟡 100% | Gán xong, chờ review |
 | 3 | Job 1712 — 25 ảnh | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | 🟡 % | |
 | 4 | Job 1713 — 25 ảnh | ~~Nguyễn Hữu Dũng~~ → *(chưa ai nhận)* | — | ⬜ 0% | Giao Dũng nhưng Dũng không liên lạc được; tạm thời chưa ai làm |
 
@@ -49,8 +49,8 @@ Tính riêng từng phần, không cộng chung.
 
 | Phần | Đã gán | Qua review lần đầu |
 |---|---|---|
-| BBox_Polygon_Polyline | ~60 / 100 frame (60%) | Chưa review chéo |
-| Segmentation | Chưa đủ số (thiếu % job 1711, 1712) / 100 ảnh | Chưa review chéo |
+| BBox_Polygon_Polyline | ~72 / 100 frame (72%) | Chưa review chéo |
+| Segmentation | Ít nhất 50 / 100 ảnh (chưa có % job 1712) | Chưa review chéo |
 
 - Edge case mới: [P-001](../problem-backlog.md#p-001) (xe đứng dày đặc), [P-002](../problem-backlog.md#p-002) (vùng không xác định được class), [P-003](../problem-backlog.md#p-003) (kết cấu cầu, đang mở) — cả ba thuộc Segmentation
 - Edge case đã chốt (19/09): P-001 → [QĐ-001](../so-quyet-dinh.md#qđ-001) tô chung thành một mảng · P-002 → [QĐ-002](../so-quyet-dinh.md#qđ-002) không tô, để trống
@@ -65,7 +65,7 @@ Tính riêng từng phần, không cộng chung.
 ## Kế hoạch tuần 02
 
 **Tiến độ**
-- BBox: đưa 1496, 1495, 1494 lên 100%. Seg: đưa 1711, 1712 lên 100%. Job 1497, 1710 của Hải đã gán xong. Xong job nào thì review chéo job đó.
+- BBox: đưa 1496, 1494 lên 100%. Seg: đưa 1712 lên 100%. Đã gán xong: 1497, 1710 (Hải), 1495, 1711 (Khôi). Xong job nào thì review chéo job đó.
 - Tìm người nhận job Seg 1713.
 - Mỗi reviewer ghi số ảnh bị trả lại để điền "Qua review lần đầu".
 
