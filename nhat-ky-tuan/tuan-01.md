@@ -52,8 +52,8 @@ Tính riêng từng phần, không cộng chung.
 | BBox_Polygon_Polyline | ~60 / 100 frame (60%) | Chưa review chéo |
 | Segmentation | Chưa đủ số (thiếu % job 1711, 1712) / 100 ảnh | Chưa review chéo |
 
-- Edge case mới: [P-001](../problem-backlog.md#p-001) (xe đứng dày đặc), [P-002](../problem-backlog.md#p-002) (vùng không xác định được class) — cả hai thuộc Segmentation, đã tạo Issue, chờ trả lời
-- Edge case đã chốt: Chưa có — nháp [QĐ-001](../so-quyet-dinh.md#qđ-001), [QĐ-002](../so-quyet-dinh.md#qđ-002) chờ chốt
+- Edge case mới: [P-001](../problem-backlog.md#p-001) (xe đứng dày đặc), [P-002](../problem-backlog.md#p-002) (vùng không xác định được class) — cả hai thuộc Segmentation
+- Edge case đã chốt (19/09): P-001 → [QĐ-001](../so-quyet-dinh.md#qđ-001) tô chung thành một mảng · P-002 → [QĐ-002](../so-quyet-dinh.md#qđ-002) không tô, để trống
 
 ## Vướng mắc
 
@@ -61,8 +61,6 @@ Tính riêng từng phần, không cộng chung.
   chưa phản hồi, đã báo BTC. Ngày 19/09 đã chuyển job 1497 cho Hải, review job 1710 cho Mạnh.
 - **Team có 2 lead, mỗi lead chỉ thấy một phần:** lead 1 chỉ thấy `bbox_polygon`, lead 2 chỉ thấy
   segmentation. Khó tổng hợp tiến độ, edge case và quyết định chung của cả đội.
-- **P-001, P-002 chưa có câu trả lời** nên chưa chốt được cách tô xe dày đặc và vùng không xác định
-  class. Các ảnh gặp hai trường hợp này có thể phải sửa lại sau khi chốt.
 
 ## Kế hoạch tuần 02
 
@@ -83,8 +81,9 @@ Tính riêng từng phần, không cộng chung.
 - Hẹn 2 lead trao đổi ngắn mỗi cuối tuần trước khi chốt nhật ký.
 
 **Edge case**
-- Theo dõi Issue của P-001, P-002. Có câu trả lời thì chốt QĐ-001, QĐ-002 và báo cả đội.
-- Rà lại các ảnh đã gặp hai trường hợp này sau khi chốt.
+- ✅ Đã chốt P-001 → QĐ-001, P-002 → QĐ-002 (19/09).
+- Báo QĐ-001, QĐ-002 cho cả đội phần Segmentation.
+- Rà lại các ảnh đã gặp hai trường hợp này, sửa theo quyết định.
 
 **Hoàn thiện repo**
 - Thu handle GitHub của các thành viên để thay cho mã sinh viên.

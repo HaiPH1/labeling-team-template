@@ -9,8 +9,8 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
 
 | Mã | Tóm tắt | Loại | Mục guideline | Trạng thái | Kết quả |
 |---|---|---|---|---|---|
-| [P-001](#p-001) | Segmentation: xe đứng dày đặc, sát nhau thì tô thế nào | Guideline chưa nói tới | §1, §3, §4 | ↗️ Hỏi BTC | — |
-| [P-002](#p-002) | Segmentation: vùng không xác định được class (vd. vùng đen) | Guideline chưa nói tới | §1 RULE 03, §6 | ↗️ Hỏi BTC | — |
+| [P-001](#p-001) | Segmentation: xe đứng dày đặc, sát nhau thì tô thế nào | Guideline chưa nói tới | §1, §3, §4 | ✅ Đã chốt | [QĐ-001](so-quyet-dinh.md#qđ-001) |
+| [P-002](#p-002) | Segmentation: vùng không xác định được class (vd. vùng đen) | Guideline chưa nói tới | §1 RULE 03, §6 | ✅ Đã chốt | [QĐ-002](so-quyet-dinh.md#qđ-002) |
 
 **Loại**
 
@@ -42,7 +42,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
   2. Bám biên từng xe, khe hở thấy được mặt đường thì tô `road`.
   3. Xe ở xa, quá nhỏ để phân biệt `car` / `truck` / `bus` thì không đoán mà đưa review (theo §3, §4).
 - **Xử lý tạm trong lúc chờ:** Đã tạo Issue để hỏi, chờ trả lời.
-- **Kết quả:** ↗️ Chờ trả lời Issue · nháp quyết định: [QĐ-001](so-quyet-dinh.md#qđ-001)
+- **Kết quả:** ✅ [QĐ-001](so-quyet-dinh.md#qđ-001) — tô chung thành một mảng (19/09/2026)
 
 ## P-002
 
@@ -60,7 +60,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
   2. Gán vào label ignore/unlabeled — chỉ làm được nếu batch có cấu hình label này.
   3. Gán theo vùng xung quanh (vd. vùng đen giữa mặt đường → `road`) — dễ thành đoán, trái RULE 03.
 - **Xử lý tạm trong lúc chờ:** Đã tạo Issue để hỏi, chờ trả lời.
-- **Kết quả:** ↗️ Chờ trả lời Issue · nháp quyết định: [QĐ-002](so-quyet-dinh.md#qđ-002)
+- **Kết quả:** ✅ [QĐ-002](so-quyet-dinh.md#qđ-002) — không tô, để trống (19/09/2026)
 
 ---
 
