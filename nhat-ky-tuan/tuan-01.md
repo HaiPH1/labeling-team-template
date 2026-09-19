@@ -40,7 +40,7 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 |---|---|---|---|---|---|
 | 1 | Job 1710 — 25 ảnh | Phạm Hữu Hải | ~~Nguyễn Hữu Dũng~~ → Nguyễn Hùng Mạnh | 🟡 100% | Gán xong, chờ review |
 | 2 | Job 1711 — 25 ảnh | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | 🟡 100% | Gán xong, chờ review |
-| 3 | Job 1712 — 25 ảnh | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | 🟡 % | |
+| 3 | Job 1712 — 25 ảnh | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | 🟡 100% | Gán xong, chờ review |
 | 4 | Job 1713 — 25 ảnh | ~~Nguyễn Hữu Dũng~~ → *(chưa ai nhận)* | — | ⬜ 0% | Giao Dũng nhưng Dũng không liên lạc được; tạm thời chưa ai làm |
 
 ## Tổng kết
@@ -50,7 +50,7 @@ Tính riêng từng phần, không cộng chung.
 | Phần | Đã gán | Qua review lần đầu |
 |---|---|---|
 | BBox_Polygon_Polyline | 100 / 100 frame (100%) | 3 / 4 job qua review lần đầu (1495, 1496, 1497); job 1494 bị trả lại |
-| Segmentation | Ít nhất 50 / 100 ảnh (chưa có % job 1712) | Chưa review chéo |
+| Segmentation | 75 / 100 ảnh (75%) — còn job 1713 chưa ai nhận | Chưa review chéo |
 
 - Edge case mới: [P-001](../problem-backlog.md#p-001) (xe đứng dày đặc), [P-002](../problem-backlog.md#p-002) (vùng không xác định được class), [P-003](../problem-backlog.md#p-003) (kết cấu cầu, đang mở) — cả ba thuộc Segmentation
 - Edge case đã chốt (19/09): P-001 → [QĐ-001](../so-quyet-dinh.md#qđ-001) tô chung thành một mảng · P-002 → [QĐ-002](../so-quyet-dinh.md#qđ-002) không tô, để trống
@@ -65,7 +65,7 @@ Tính riêng từng phần, không cộng chung.
 ## Kế hoạch tuần 02
 
 **Tiến độ**
-- BBox: Thắng sửa job 1494 theo lỗi review, Hải review lại. Seg: đưa 1712 lên 100%, review 1710, 1711. Xong job nào thì review chéo job đó.
+- BBox: Thắng sửa job 1494 theo lỗi review, Hải review lại. Seg: review 1710, 1711, 1712. Xong job nào thì review chéo job đó.
 - Tìm người nhận job Seg 1713.
 - Mỗi reviewer ghi số ảnh bị trả lại để điền "Qua review lần đầu".
 
