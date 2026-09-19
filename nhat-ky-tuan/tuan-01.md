@@ -38,7 +38,7 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
-| 1 | Job 1710 — 25 ảnh | Phạm Hữu Hải | ~~Nguyễn Hữu Dũng~~ → Nguyễn Hùng Mạnh | 🟡 100% | Gán xong, chờ review. Trước ghi nhầm sang BBox. 19/09 đổi reviewer từ Dũng sang Mạnh |
+| 1 | Job 1710 — 25 ảnh | Phạm Hữu Hải | ~~Nguyễn Hữu Dũng~~ → Nguyễn Hùng Mạnh | 🟡 100% | Gán xong, chờ review |
 | 2 | Job 1711 — 25 ảnh | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | 🟡 % | |
 | 3 | Job 1712 — 25 ảnh | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | 🟡 % | |
 | 4 | Job 1713 — 25 ảnh | ~~Nguyễn Hữu Dũng~~ → *(chưa ai nhận)* | — | ⬜ 0% | Giao Dũng nhưng Dũng không liên lạc được; tạm thời chưa ai làm |
