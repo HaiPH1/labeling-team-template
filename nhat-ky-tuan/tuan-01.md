@@ -29,10 +29,10 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
-| 1 | Job 1497 — 25 frame, 2D | ~~Nguyễn Hữu Dũng~~ → Phạm Hữu Hải | Nguyễn Hùng Mạnh | 🟡 100% | Gán xong, chờ review. Ban đầu giao Dũng. Dũng không có trong nhóm Discord, liên hệ riêng không phản hồi, đã báo cáo BTC → 19/09 chuyển cho Hải |
-| 2 | Job 1496 — 25 frame, 2D | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | 🟡 30% | Đang gán |
+| 1 | Job 1497 — 25 frame, 2D | ~~Nguyễn Hữu Dũng~~ → Phạm Hữu Hải | Nguyễn Hùng Mạnh | ✅ 100% | Đã qua review. Ban đầu giao Dũng. Dũng không có trong nhóm Discord, liên hệ riêng không phản hồi, đã báo cáo BTC → 19/09 chuyển cho Hải |
+| 2 | Job 1496 — 25 frame, 2D | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | ✅ 100% | Đã qua review |
 | 3 | Job 1495 — 25 frame, 2D | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | ✅ 100% | Đã qua review |
-| 4 | Job 1494 — 25 frame, 2D | Vũ Tiến Thắng | Phạm Hữu Hải | 🟡 60% | Đang gán |
+| 4 | Job 1494 — 25 frame, 2D | Vũ Tiến Thắng | Phạm Hữu Hải | 🟡 100% | Gán xong. Review **trả lại (rejected)**, Thắng sửa rồi review lại |
 
 ### Segmentation
 
@@ -49,7 +49,7 @@ Tính riêng từng phần, không cộng chung.
 
 | Phần | Đã gán | Qua review lần đầu |
 |---|---|---|
-| BBox_Polygon_Polyline | ~72 / 100 frame (72%) | 1 / 4 job đã review (1495); số frame bị trả lại: *(chưa ghi)* |
+| BBox_Polygon_Polyline | 100 / 100 frame (100%) | 3 / 4 job qua review lần đầu (1495, 1496, 1497); job 1494 bị trả lại |
 | Segmentation | Ít nhất 50 / 100 ảnh (chưa có % job 1712) | Chưa review chéo |
 
 - Edge case mới: [P-001](../problem-backlog.md#p-001) (xe đứng dày đặc), [P-002](../problem-backlog.md#p-002) (vùng không xác định được class), [P-003](../problem-backlog.md#p-003) (kết cấu cầu, đang mở) — cả ba thuộc Segmentation
@@ -65,7 +65,7 @@ Tính riêng từng phần, không cộng chung.
 ## Kế hoạch tuần 02
 
 **Tiến độ**
-- BBox: đưa 1496, 1494 lên 100%. Seg: đưa 1712 lên 100%. Đã gán xong: 1497, 1710 (Hải), 1495, 1711 (Khôi). Xong job nào thì review chéo job đó.
+- BBox: Thắng sửa job 1494 theo lỗi review, Hải review lại. Seg: đưa 1712 lên 100%, review 1710, 1711. Xong job nào thì review chéo job đó.
 - Tìm người nhận job Seg 1713.
 - Mỗi reviewer ghi số ảnh bị trả lại để điền "Qua review lần đầu".
 
