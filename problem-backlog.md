@@ -11,7 +11,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
 |---|---|---|---|---|---|
 | [P-001](#p-001) | Segmentation: xe đứng dày đặc, sát nhau thì tô thế nào | Guideline chưa nói tới | §1, §3, §4 | ✅ Đã chốt | [QĐ-001](so-quyet-dinh.md#qđ-001) |
 | [P-002](#p-002) | Segmentation: vùng không xác định được class (vd. vùng đen) | Guideline chưa nói tới | §1 RULE 03, §6 | ✅ Đã chốt | [QĐ-002](so-quyet-dinh.md#qđ-002) |
-| [P-003](#p-003) | Segmentation: kết cấu cầu (dầm thép, cầu cạn, trụ cầu) tô class nào | Guideline chưa nói tới | §2, §1 RULE 03, §4 | 🔴 Mở | — |
+| [P-003](#p-003) | Segmentation: kết cấu cầu (dầm thép, cầu cạn, trụ cầu) tô class nào | Guideline chưa nói tới | §2, §1 RULE 03, §4 | ✅ Đã chốt | [QĐ-003](so-quyet-dinh.md#qđ-003) |
 
 **Loại**
 
@@ -90,7 +90,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
      trụ cầu → `wall` hoặc `pole`, dầm thép và mặt cầu → để trống hoặc `building`.
 - **Xử lý tạm trong lúc chờ:** *(chưa có — đề xuất: để trống phần dầm và mặt cầu theo tinh thần
   QĐ-002, vẫn tô `fence` / `wall` cho lan can và dải phân cách)*
-- **Kết quả:** 🔴 Mở · nháp quyết định: [QĐ-003](so-quyet-dinh.md#qđ-003)
+- **Kết quả:** ✅ [QĐ-003](so-quyet-dinh.md#qđ-003) — không vẽ kết cấu cầu, để trống (20/09/2026)
 
 ---
 

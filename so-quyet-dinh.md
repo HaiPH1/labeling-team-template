@@ -13,7 +13,7 @@ cũ được gán theo cách cũ.
 |---|---|---|---|---|
 | [QĐ-001](#qđ-001) | Segmentation: xe đứng dày đặc, sát nhau thì tô chung thành một mảng | 19/09/2026 | [P-001](problem-backlog.md#p-001) | Hiệu lực |
 | [QĐ-002](#qđ-002) | Segmentation: vùng không xác định được class (vd. vùng đen) thì không tô, để trống | 19/09/2026 | [P-002](problem-backlog.md#p-002) | Hiệu lực |
-| [QĐ-003](#qđ-003) | Segmentation: kết cấu cầu tô class nào | — | [P-003](problem-backlog.md#p-003) | ⏳ Chờ chốt |
+| [QĐ-003](#qđ-003) | Segmentation: không vẽ kết cấu cầu, để trống | 20/09/2026 | [P-003](problem-backlog.md#p-003) | Hiệu lực |
 
 **Trạng thái:** ⏳ Chờ chốt (bản nháp, còn sửa được) · Hiệu lực · Bị thay bởi QĐ-xxx · Huỷ (ghi lý do)
 
@@ -67,25 +67,27 @@ cũ được gán theo cách cũ.
 
 ## QĐ-003
 
-**Segmentation: kết cấu cầu (dầm thép, cầu cạn, trụ cầu) tô class nào**
+**Segmentation: không vẽ kết cấu cầu, để trống**
 
-- **Ngày:** *(điền khi chốt)*
-- **Người tham gia:** Phạm Hữu Hải (@HaiPH1)
+- **Ngày:** 20/09/2026
+- **Người tham gia:** Phạm Hữu Hải (@HaiPH1) (chốt)
 - **Xuất phát từ:** [P-003](problem-backlog.md#p-003) · ảnh `w1/segmentation/G06/G06_S023.jpg`,
   `w1/segmentation/G06/G06_S024.jpg`
 - **Bối cảnh:** Guideline §2 chỉ có 19 class, không có class cho cầu. Ảnh có dầm thép, mặt cầu cạn,
   trụ cầu; annotator không biết tô class nào hay để trống.
 - **Các phương án đã cân nhắc:**
   1. *Để trống toàn bộ kết cấu cầu, giống QĐ-002* — nhất quán với QĐ-002 và cách bộ Cityscapes bỏ qua cầu;
-     nhưng để trống vùng lớn trong ảnh. *(chờ chốt)*
-  2. *Tô toàn bộ là `building`* — phủ kín ảnh, dễ làm; nhưng dễ thành đoán, trái RULE 03. *(chờ chốt)*
+     nhưng để trống vùng lớn trong ảnh. **Chọn.**
+  2. *Tô toàn bộ là `building`* — phủ kín ảnh, dễ làm; nhưng dễ thành đoán, trái RULE 03. Loại.
   3. *Tách theo bộ phận (lan can → `fence`, bê tông → `wall`, dầm/mặt cầu → để trống hoặc `building`)* —
-     tận dụng class có sẵn; nhưng mất thời gian, dễ lệch giữa các annotator. *(chờ chốt)*
-- **Quyết định:** *(chưa chốt)*
+     tận dụng class có sẵn; nhưng mất thời gian, dễ lệch giữa các annotator. Loại.
+- **Quyết định:** **Không vẽ** kết cấu cầu — dầm thép, mặt cầu cạn, trụ cầu đều để trống, không gán class.
 - **Việc phải làm theo:**
-  - [ ] Chốt phương án (@HaiPH1)
+  - [x] Chốt phương án (@HaiPH1)
   - [ ] Báo cả đội phần Segmentation, rà lại các ảnh có cầu
-- **Trạng thái:** ⏳ Chờ chốt
+  - [ ] Làm rõ: lan can lưới và dải phân cách bê tông trên cầu có tô `fence` / `wall` như bình thường
+        không, hay cũng để trống
+- **Trạng thái:** Hiệu lực
 
 ---
 
