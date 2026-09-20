@@ -10,8 +10,8 @@
 | Thành viên | Vị trí | BBox_Polygon_Polyline | Segmentation |
 |---|---|---|---|
 | Phạm Hữu Hải (2A202602098) | Lead · Annotator · Reviewer | Gán 1497 **(nhận lại từ Dũng, 19/09)**; review 1494 | Gán 1710 |
-| Nguyễn Hữu Dũng (2A202602153) | Annotator · Reviewer | ~~Gán 1497~~ → chuyển cho Hải (19/09) | Gán 1713 **(vào làm lại 20/09)**; ~~review 1710~~ → chuyển cho Mạnh (19/09) |
-| Nguyễn Hùng Mạnh (2A202602062) | Annotator · Reviewer | Gán 1496; review 1497 | Gán 1712; review 1710 **(thay Dũng, 19/09)** |
+| Nguyễn Hữu Dũng (2A202602153) | Annotator · Reviewer | ~~Gán 1497~~ → chuyển cho Hải (19/09) | Gán 1713 **(vào làm lại 20/09)**; review 1710 |
+| Nguyễn Hùng Mạnh (2A202602062) | Annotator · Reviewer | Gán 1496; review 1497 | Gán 1712; review 1713 |
 | Nguyễn Tuấn Khôi (2A202602241) | Annotator · Reviewer | Gán 1495; review 1496 | Gán 1711; review 1712 |
 | Vũ Tiến Thắng (2A202602087) | Annotator · Reviewer | Gán 1494; review 1495 | Review 1711 |
 
@@ -21,8 +21,8 @@ ghi trong bảng Công việc.
 **Thay đổi 19/09:** Dũng không liên lạc được nên rút khỏi phân công. Job BBox 1497 chuyển cho Hải gán
 (Mạnh vẫn review); review job Seg 1710 chuyển từ Dũng sang Mạnh; job Seg 1713 tạm chưa ai làm.
 
-**Thay đổi 20/09:** Dũng vào làm lại và gán xong job Seg 1713. Job BBox 1497 và review job Seg 1710
-vẫn giữ ở người đã nhận thay.
+**Thay đổi 20/09:** Dũng vào làm lại và gán xong job Seg 1713. Review job Seg 1710 trả lại cho Dũng
+như phân công ban đầu; job Seg 1713 do Mạnh review. Job BBox 1497 vẫn giữ ở Hải.
 
 ## Công việc
 
@@ -41,10 +41,10 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
-| 1 | Job 1710 — 25 ảnh | Phạm Hữu Hải | ~~Nguyễn Hữu Dũng~~ → Nguyễn Hùng Mạnh | 🟡 100% | Gán xong, chờ review |
+| 1 | Job 1710 — 25 ảnh | Phạm Hữu Hải | Nguyễn Hữu Dũng | 🟡 100% | Gán xong, chờ review |
 | 2 | Job 1711 — 25 ảnh | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | 🟡 100% | Gán xong, chờ review |
 | 3 | Job 1712 — 25 ảnh | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | 🟡 100% | Gán xong, chờ review |
-| 4 | Job 1713 — 25 ảnh | Nguyễn Hữu Dũng | Phạm Hữu Hải | 🟡 100% | 20/09 Dũng vào làm lại và gán xong, chờ review |
+| 4 | Job 1713 — 25 ảnh | Nguyễn Hữu Dũng | Nguyễn Hùng Mạnh | 🟡 100% | 20/09 Dũng vào làm lại và gán xong, chờ review |
 
 ## Tổng kết
 
