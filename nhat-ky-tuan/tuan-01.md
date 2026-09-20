@@ -32,9 +32,9 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
-| 1 | Job 1497 — 25 frame, 2D | ~~Nguyễn Hữu Dũng~~ → Phạm Hữu Hải | Nguyễn Hùng Mạnh | ✅ 100% | Đã qua review. Ban đầu giao Dũng. Dũng không có trong nhóm Discord, liên hệ riêng không phản hồi, đã báo cáo BTC → 19/09 chuyển cho Hải |
-| 2 | Job 1496 — 25 frame, 2D | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | ✅ 100% | Đã qua review |
-| 3 | Job 1495 — 25 frame, 2D | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | ✅ 100% | Đã qua review |
+| 1 | Job 1497 — 25 frame, 2D | ~~Nguyễn Hữu Dũng~~ → Phạm Hữu Hải | Nguyễn Hùng Mạnh | ✅ 100% | Review lần 1 trả lại (rejected), Hải sửa, review lại đã qua. Ban đầu giao Dũng. Dũng không có trong nhóm Discord, liên hệ riêng không phản hồi, đã báo cáo BTC → 19/09 chuyển cho Hải |
+| 2 | Job 1496 — 25 frame, 2D | Nguyễn Hùng Mạnh | Nguyễn Tuấn Khôi | ✅ 100% | Review lần 1 trả lại (rejected), Mạnh sửa, review lại đã qua |
+| 3 | Job 1495 — 25 frame, 2D | Nguyễn Tuấn Khôi | Vũ Tiến Thắng | ✅ 100% | Review lần 1 trả lại (rejected), Khôi sửa, review lại đã qua |
 | 4 | Job 1494 — 25 frame, 2D | Vũ Tiến Thắng | Phạm Hữu Hải | ✅ 100% | Review lần 1 trả lại (rejected), Thắng sửa, review lại đã qua |
 
 ### Segmentation
@@ -52,7 +52,7 @@ Tính riêng từng phần, không cộng chung.
 
 | Phần | Đã gán | Qua review lần đầu |
 |---|---|---|
-| BBox_Polygon_Polyline | 100 / 100 frame (100%) — **xong cả gán và review** | 3 / 4 job qua review lần đầu (1495, 1496, 1497); job 1494 bị trả lại 1 lần, sửa xong đã qua |
+| BBox_Polygon_Polyline | 100 / 100 frame (100%) — **xong cả gán và review** | 0 / 4 job qua review lần đầu — cả 4 job bị trả lại 1 lần, sửa xong đều đã qua |
 | Segmentation | 100 / 100 ảnh (100%) | Chưa review chéo |
 
 - Edge case mới: [P-001](../problem-backlog.md#p-001) (xe đứng dày đặc), [P-002](../problem-backlog.md#p-002) (vùng không xác định được class), [P-003](../problem-backlog.md#p-003) (kết cấu cầu, đang mở) — cả ba thuộc Segmentation
